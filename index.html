@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>Conversation Tracer Post wireframe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="post.css">
+  </head>
+
+  <body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+      <header>
+        <h1>New Conversation</h1>
+      </header>
+      <section>
+        <form id="record-conversation">
+          <section class="form-section overview-section">
+            <label for="conversation-topic">Conversation topic</label>
+            <input type="text" name="conversation-topic" placeholder="Conspiracy theories" required>
+          </section>
+          <section class="form-section overview-section">
+            <label for="conversation-summary">Conversation summary</label>
+            <textarea name="conversation-summary" rows="20" required></textarea>
+          </section>
+          <section class="person-container form-section">
+            <label for="person">Person</label>
+            <input type="text" name="person" id="person" placeholder="Mike">
+          </section>
+          <section class="form-section relationship-type-section">
+            <h2>Select relationship type</h2>
+
+            <input type="radio" name="relationship-type" id="relationship-type-friend" value="0" class="relationship-type-radio" checked>
+            <label for="relationship-type-friend">
+              <span>Friend</span>
+              <p class="relationship-type-explanation">This person promises good company. Build this relationship to do fun activities and share laughs together.</p>
+            </label>
+
+            <input type="radio" name="relationship-type" name="relationship-type" id="relationship-type-family" value="1" class="relationship-type-radio">
+            <label for="relationship-type-family">
+              <span>Family</span>
+              <p class="relationship-type-explanation">Some are born family, others are chosen. In this relationship, you intend to find loyaty, trust, and safety coming from both sides.</p>
+            </label>
+
+            <input type="radio" name="relationship-type" id="relationship-type-romantic" value="2" class="relationship-type-radio">
+            <label for="relationship-type-romantic">
+              <span>Romantic</span>
+              <p class="relationship-type-explanation">This person promises a deeply intimate and emotional connection. Build this connection to share tender love and ignite souls.</p>
+            </label>
+
+            <input type="radio" name="relationship-type" id="relationship-type-mentee" value="3" class="relationship-type-radio">
+            <label for="relationship-type-mentee">
+              <span>Mentee</span>
+              <p class="relationship-type-explanation">A person who seeks guidance and mentorship. This is an opportunity for you to help someone evolve.</p>
+            </label>
+
+            <input type="radio" name="relationship-type" id="relationship-type-mentor" value="4" class="relationship-type-radio">
+            <label for="relationship-type-mentor">
+              <span>Mentor</span>
+              <p class="relationship-type-explanation">A person who offers you constructive feedback on your ideas and valuable insight on your goals. In this relationship you intend to receive direction in life.</p>
+            </label>
+
+            <input type="radio" name="relationship-type" id="relationship-type-work" value="5" class="relationship-type-radio">
+            <label for="relationship-type-work">
+              <span>Work</span>
+              <p class="relationship-type-explanation">Keep this person in your network to exchange job referrals and job insights.</p>
+            </label>
+          </section>
+
+          <section class="form-section">
+            <label class="conversation-date-label" for="date-month">Date of Conversation</label>
+            <input type="number" name="date-month" id="date-month" placeholder="01" min="1" max="12" required=""> .
+            <input type="number" name="date-day" class="date-day"  placeholder="28" min="1" max="31" required=""> .
+            <input type="number" name="date-year" class="date-year" placeholder="2021" min="2010" max="2025" required="">
+          </section>
+          <section class="button-section">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+
+</html>
